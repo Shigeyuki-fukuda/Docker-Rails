@@ -14,8 +14,8 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password:
-  host: localhost
+  password: password # docker-compose.ymlのMYSQL_ROOT_PASSWORDに合わせる必要がある
+  host: db # docker-compose.ymlのMySQLサーバーのコンテナのサービス名に指定したdbに合わせる必要がある
 
 development:
   <<: *default
